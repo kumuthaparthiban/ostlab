@@ -1,0 +1,23 @@
+Text Manuplultion
+print "What is your name?\n";
+$name = <>;
+chomp($name); # removes newline character
+print "Your name is ",$name,"\n";
+print chr(70),"\n";
+print q{(abc@example.com)};
+print "\n";
+print qq{(abc@example.com)\n};
+print "abc"x3,"\n";
+$a = "abcdefghij";
+print length($a),"\n";
+$a = "Hey there World";
+print substr($a,4),"\n";
+print substr($a,0,3),"\n";
+print index("Hey there!Hey","y"),"\n";
+print rindex("Hey there!Hey","y"),"\n";
+print join("-",(1,2,3)),"\n";
+print lc("Hey EveryONE"),"\n";
+print ucfirst("hey EveryONE"),"\n";
+print uc("hey EveryONE"),"\n";
+@a = split(/-/, "1-2-3");
+print "@a\n";
